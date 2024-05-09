@@ -14,8 +14,8 @@ body {
 
 header,
 section {
-  height: 99vh;
-  padding: 3em 4em;
+  min-height: 99vh;
+  padding: 3em min(4em, 10vw);
 }
 
 /*** Fonts and Typography **********************/
@@ -42,7 +42,7 @@ section#nosso-trabalho h2 {
 
 /*** Cabeçalho **********************/
 header#capa-trabalho {
-  background: #000 url("../images/4.jpg") no-repeat bottom right;
+  background: #000 url("../images/1.jpg") no-repeat bottom right;
   background-size: contain;
 
   color: #ffffff;
@@ -53,7 +53,7 @@ header#capa-trabalho {
 }
 
 header#capa-trabalho div#content {
-  max-width: 500px;
+  max-width: max(400px, 40%);
 }
 
 header#capa-trabalho span#business {
@@ -78,7 +78,7 @@ section#linha-do-tempo {
 }
 
 section#provocacao {
-  background: url("../images/3.jpg") no-repeat bottom;
+  background: url("../images/2.jpg") no-repeat bottom;
   background-size: cover;
 
   display: flex;
@@ -108,12 +108,12 @@ footer {
   backdrop-filter: blur(.6em);
   -webkit-backdrop-filter: blur(.6em);
 
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
   border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.37);
 }
 
 .glass:hover {
   color: #ffffff;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
 }
